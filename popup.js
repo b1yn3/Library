@@ -10,9 +10,3 @@ openBtn.onclick = () => {
 closeBtn.onclick = () => {
     popup.style.display = "none";
 };
-
-submitBtn.onclick = () => {
-    const answer = document.getElementById("answerInput").value;
-    alert("You answered: " + answer);
-    popup.style.display = "none";
-};
