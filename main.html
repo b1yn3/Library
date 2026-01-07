@@ -9,7 +9,23 @@
 <body>
     <header>
         <h3>Library</h3>
-        <button>Add Books</button>
+        <button id="openPopup">Add Books</button>
+        <div id="popup"     class="modal">
+            <form class="modal-content">
+                <h3>Add book</h3>
+                <input type="text" id="title" placeholder="Title" required/>
+                <input type="text" id="author" placeholder="Author" required/>
+                <input type="number" id="page" placeholder="Page" required/>
+                <select name="readStatus" id="read">
+                    <option value="readYes">Read</option>
+                    <option value="readNo">Not Read</option>
+                </select>
+                <br><br>
+                <button type="submit">Save</button>
+                <button type="button" id="closePopup">Cancel</button>
+            </form>
+        </div>
+        <script src="popup.js"> </script>
     </header>
     <main>
         <article>
