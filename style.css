@@ -5,6 +5,24 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > h3{
+    margin: 20px 0 20px 0;
+}
+
+header > button {
+    padding: 10px;
+}
+
+
+
 .modal {
   display: none;
   position: fixed;
@@ -21,20 +39,14 @@
   text-align: center;
 }
 
-header{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.modal-content > input, .modal-content > button, .modal-content > select {
+  margin-top: 10px;
 }
 
-header > h3{
-    margin: 20px 0 20px 0;
+input{
+  padding-left: 3px;
 }
 
-header > button {
-    padding: 10px;
-}
 
 main{
     display: grid;
