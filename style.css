@@ -21,17 +21,43 @@ header > button {
 }
 
 main{
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    justify-items: center;
     margin: 40px;
 }
 
 article{
+    margin-bottom: 30px;
+    width: 100%;
+    aspect-ratio: 5 / 6;
+    max-width: 250px;
+    max-height: 300px;
+    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 250px;
-    background-color: blue;
-    height: 300px;
+}
+
+
+
+@media (min-width: 1200px) {
+  main {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 899px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 5px;
+  }
 }
