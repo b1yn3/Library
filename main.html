@@ -9,7 +9,23 @@
 <body>
     <header>
         <h3>Library</h3>
-        <button>Add Books</button>
+        <button id="showDialog">Add Books</button>
+        <dialog id="confirmDialog">
+            <h3>Add Books</h3>
+            <form method="dialog" id="dialogForm">
+                <p>Title:</p>
+                <input type="text" id="titleInput">
+                <p>Author:</p>
+                <input type="text" id="authorInput">
+                <p>Pages:</p>
+                <input type="number" id="pageInput">
+                <p>Read:</p>
+                <select>
+                    <option value="Read">Read</option>
+                    <option value="Unread">Unread</option>
+                </select>                              
+            </form>
+        </dialog>
     </header>
     <main>
         <article>

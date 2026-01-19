@@ -1,5 +1,8 @@
 const myLibrary = [];
 
+const showDialog = document.getElementById('showDialog');
+const confirmDialog = document.getElementById('confirmDialog');
+
 function Book(title, author, pages, read, id){
     this.title = title;
     this.author = author;
@@ -11,3 +14,7 @@ function Book(title, author, pages, read, id){
 function addBookToLibrary(){
 
 }
+
+showDialog.addEventListener('click', () => {
+    confirmDialog.showModal();
+});
