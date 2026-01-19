@@ -14,13 +14,13 @@
             <h3>Add Books</h3>
             <form method="dialog" id="dialogForm">
                 <p>Title:</p>
-                <input type="text" id="titleInput">
+                <input type="text" id="titleInput" required>
                 <p>Author:</p>
-                <input type="text" id="authorInput">
+                <input type="text" id="authorInput" required>
                 <p>Pages:</p>
-                <input type="number" id="pageInput">
+                <input type="number" id="pageInput" required min="1">
                 <p>Read:</p>
-                <select>
+                <select required>
                     <option value="Read">Read</option>
                     <option value="Unread">Unread</option>
                 </select>                              
