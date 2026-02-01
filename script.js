@@ -28,3 +28,12 @@ cancelButton.addEventListener('click', () => {
     dialogForm.reset();
     confirmDialog.close();
 });
+
+dialogForm.addEventListener("submit", function(e) {
+    const titleInput = document.getElementById("titleInput");
+    const authorInput = document.getElementById("authorInput");
+    const pageInput = document.getElementById("pageInput");
+    const selectInput = document.getElementById("selectInput");
+    console.log(`Title: ${titleInput.value}, ${authorInput.value} ${pageInput.value} ${selectInput.value}`);
+
+});
