@@ -15,7 +15,7 @@ function Book(title, author, pages, read, id){
 
 function addBookToHTML(titleInput, authorInput, pageInput, selectInput, uuid){
     const article = document.createElement('article');
-    article.id = uuid;
+    article.dataset.id = uuid;
 
     const div = document.createElement('div');
     div.classList.add('delete');
