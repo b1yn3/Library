@@ -42,7 +42,7 @@ function addBookToHTML(titleInput, authorInput, pageInput, selectInput, uuid){
 
     article.append(div, h4, pAuthor, pPage, pSelect);
 
-    const main = document.querySelector('Main');
+    const main = document.querySelector('main');
     main.appendChild(article);
 }
 
@@ -56,6 +56,7 @@ cancelButton.addEventListener('click', () => {
 });
 
 dialogForm.addEventListener("submit", function(e) {
+    e.preventDefault();
     const titleInput = document.getElementById("titleInput");
     const authorInput = document.getElementById("authorInput");
     const pageInput = document.getElementById("pageInput");
