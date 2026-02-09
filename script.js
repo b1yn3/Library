@@ -2,9 +2,6 @@ const myLibrary = [];
 
 const showDialog = document.getElementById('showDialog');
 const confirmDialog = document.getElementById('confirmDialog');
-
-
-
 const dialogForm = document.getElementById('dialogForm');
 const cancelButton = document.getElementById('cancel-button');
 
@@ -14,10 +11,6 @@ function Book(title, author, pages, read, id){
     this.pages = pages;
     this.read = read;
     this.id = id;
-}
-
-function addBookToLibrary(){
-    Book(titleInput.value, authorInput.value, ageInput.value, selectInput.value, );
 }
 
 function addBookToHTML(titleInput, authorInput, pageInput, selectInput, uuid){
