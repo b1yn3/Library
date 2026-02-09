@@ -69,3 +69,15 @@ dialogForm.addEventListener("submit", function(e) {
     console.log(myLibrary);
     dialogForm.reset();
 });
+
+document.querySelector('main').addEventListener("click", (e) => {
+    if (!e.target.closest(".delete")) return;
+
+    const targetBook = e.target.closest("article");
+    const targetuuid = targetBook.dataset.id;
+
+    targetBook.remove();
+    const index = myLibrary.findIndex(book => book.id === targetuuid);
+    if (index !== -1) myLibrary.splice(index, 1);
+
+});
