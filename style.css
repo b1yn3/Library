@@ -39,6 +39,7 @@ article{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 #confirmDialog{
@@ -104,6 +105,21 @@ input:focus {
 button:hover{
   background-color: violet;
   cursor: pointer;
+}
+
+img {
+  width: 20px;
+}
+
+.delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.delete > button {
+  background: none;
+  border: none;
 }
 
 

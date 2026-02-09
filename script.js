@@ -17,7 +17,7 @@ function Book(title, author, pages, read, id){
 }
 
 function addBookToLibrary(){
-
+    Book(titleInput.value, authorInput.value, ageInput.value, selectInput.value, );
 }
 
 showDialog.addEventListener('click', () => {
@@ -34,6 +34,10 @@ dialogForm.addEventListener("submit", function(e) {
     const authorInput = document.getElementById("authorInput");
     const pageInput = document.getElementById("pageInput");
     const selectInput = document.getElementById("selectInput");
-    console.log(`Title: ${titleInput.value}, ${authorInput.value} ${pageInput.value} ${selectInput.value}`);
+    const uuid = crypto.randomUUID();
+    console.log(`Title: ${titleInput.value}, ${authorInput.value} ${pageInput.value} ${selectInput.value} ${uuid}`);
+
+    myLibrary.push(new Book(titleInput.value, authorInput.value, pageInput.value, selectInput.value, uuid));
+    console.log(myLibrary);
 
 });
